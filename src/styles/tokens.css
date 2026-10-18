@@ -89,11 +89,11 @@
   --top-bar-height: 64px;
   --app-margin: 16px;
   --app-gap: 16px;
-  --content-max-width: 1120px;
+  --content-max-width: 1440px;
 
-  /* Map preview: 380 x 119 dp per the reference screen. */
-  --map-width: 380px;
-  --map-height: 119px;
+  /* Full-width, responsive map surface for the map-first home screen. */
+  --map-width: 100%;
+  --map-height: clamp(240px, 36vh, 420px);
 
   /* Material Web icon font. */
   --md-icon-font: 'Material Symbols Rounded';

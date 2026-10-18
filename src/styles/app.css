@@ -289,7 +289,14 @@ md-icon {
   padding-block-end: 96px;
 }
 
+.screen {
+  display: block;
+  width: 100%;
+  min-width: 0;
+}
+
 .content__inner {
+  width: 100%;
   max-width: var(--content-max-width);
   margin-inline: auto;
   display: flex;
@@ -318,7 +325,8 @@ md-icon {
   gap: 4px;
 }
 
-/* --- Map (20dp corners, 380x119dp preview on desktop) --- */.map-card {
+/* --- Map: full-width, responsive primary surface --- */
+.map-card {
   position: relative;
   width: min(100%, var(--map-width));
   height: var(--map-height);
@@ -329,7 +337,7 @@ md-icon {
 }
 
 .map-card[data-status='error'] {
-  width: min(100%, 420px);
+  width: 100%;
   height: auto;
   min-height: 160px;
 }

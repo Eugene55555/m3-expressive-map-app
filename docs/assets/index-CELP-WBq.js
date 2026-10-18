@@ -1192,13 +1192,15 @@ var e=Object.create,t=Object.defineProperty,n=Object.getOwnPropertyDescriptor,r=
             ${this.renderDestinations(`bottom-nav__list`,`bottom-nav__icon-wrap`)}
           </nav>
 
-          <md-fab
-            class="app-fab"
-            aria-label="Add a new place"
-            @click=${()=>this.openCreate()}
-          >
-            <md-icon slot="icon">edit</md-icon>
-          </md-fab>
+          ${this.route===`settings`?``:O`
+                <md-fab
+                  class="app-fab"
+                  aria-label="Add a new place"
+                  @click=${()=>this.openCreate()}
+                >
+                  <md-icon slot="icon">edit</md-icon>
+                </md-fab>
+              `}
         </div>
       </div>
     `}});function Jo(){window.location.hash||window.history.replaceState(null,``,`${window.location.pathname}${window.location.search}#/home`);let e=document.getElementById(`app`);if(!e)return;let t=document.createElement(`m3-app`);e.append(t)}document.readyState===`loading`?document.addEventListener(`DOMContentLoaded`,Jo,{once:!0}):Jo();

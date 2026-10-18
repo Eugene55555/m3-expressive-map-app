@@ -418,13 +418,17 @@ export class M3App extends LightElement {
             ${this.renderDestinations('bottom-nav__list', 'bottom-nav__icon-wrap')}
           </nav>
 
-          <md-fab
-            class="app-fab"
-            aria-label="Add a new place"
-            @click=${() => this.openCreate()}
-          >
-            <md-icon slot="icon">edit</md-icon>
-          </md-fab>
+          ${this.route !== 'settings'
+            ? html`
+                <md-fab
+                  class="app-fab"
+                  aria-label="Add a new place"
+                  @click=${() => this.openCreate()}
+                >
+                  <md-icon slot="icon">edit</md-icon>
+                </md-fab>
+              `
+            : ''}
         </div>
       </div>
     `;

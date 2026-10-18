@@ -285,13 +285,6 @@ export class M3MapThumb extends LightElement {
             Retry
           </md-text-button>
         </div>
-        <p class="map-card__attribution">
-          &copy;
-          <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer"
-            >OpenStreetMap</a
-          >
-          contributors
-        </p>
       </div>
     `;
   }
